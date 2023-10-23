@@ -11130,25 +11130,65 @@ body {
   margin-bottom: 5rem;
 }
 
-.projects-section {
-  padding: 10rem 0;
+.committee-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem 5rem;
 }
-.projects-section .featured-text {
-  padding: 2rem;
+  
+.committees {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  margin: 1rem;
 }
-@media (min-width: 992px) {
-  .projects-section .featured-text {
-    padding: 0 0 0 2rem;
-    border-left: 0.5rem solid #f1cf88;
+  
+.committee-card {
+  flex: 0 0 calc(33.33% - 2rem);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  transition: transform 0.2s;
+  border-bottom: 0.25rem solid #f1cf88;
+}
+  
+.committee-card:hover {
+  transform: scale(1.05);
+}
+  
+.committee-logo img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+  
+@media (max-width: 768px) {
+  .committee-container {
+    margin: 2rem 1rem;
   }
-}
-.projects-section .project-text {
-  padding: 3rem;
-  font-size: 90%;
-}
-@media (min-width: 992px) {
-  .projects-section .project-text {
-    padding: 5rem;
+
+  .committee-card {
+    flex: 0 0 calc(50% - 1rem);
+    margin: 0.5rem;
+  }
+
+  .committee-logo {
+    width: 100px;
+    height: 100px;
+  }
+
+  .committee-logo img {
+    width: 100px;
+    height: 100px;
   }
 }
 
