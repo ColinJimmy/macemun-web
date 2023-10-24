@@ -11139,16 +11139,16 @@ body {
   background: linear-gradient(to bottom, #000 0%, rgba(0, 0, 0, 0.9) 75%, rgba(0, 0, 0, 0.8) 100%);
 }
 .about-section p {
-  margin-bottom: 5rem;
+  margin-bottom: 3rem;
 }
 
-.committee-container {
+.committees-section {
   height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 2rem 5rem;
+  margin: 5rem 5rem;
 }
   
 .committees {
@@ -11156,7 +11156,7 @@ body {
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
-  margin: 1rem;
+  margin-bottom: 2.5rem;
 }
   
 .committee-card {
@@ -11184,8 +11184,9 @@ body {
 }
   
 @media (max-width: 768px) {
-  .committee-container {
+  .committees-section {
     margin: 2rem 1rem;
+    padding: 1rem;
   }
 
   .committee-card {
@@ -11201,6 +11202,33 @@ body {
   .committee-logo img {
     width: 100px;
     height: 100px;
+  }
+}
+
+@media (max-width: 540px) {
+  .committees-section {
+    margin: 1rem 0.5rem;
+  }
+  .committees {
+    margin-top: 1rem;
+
+  }
+
+  .committee-card {
+    padding-bottom: 0.5rem;
+  }
+}
+
+@media (max-width: 380px) {
+  .committees-section {
+    margin: 0rem 0rem;
+  }
+  .committees {
+    margin-left: -2rem;
+    margin-right: -2rem;
+    padding-left: -2rem;
+    padding-right: -2rem;
+
   }
 }
 
