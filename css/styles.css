@@ -11307,6 +11307,18 @@ body {
 
 
 @media all and (max-width: 800px){
+
+  
+.agenda {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 7rem 0;
+  padding: 30px 0;
+}
+
   .main{
     margin-top: 2rem;
     height: 200px;
@@ -11650,23 +11662,75 @@ body {
 /* testimonials */
 
 
-.test1{
+/* .test1{
   display: grid;
   grid-template-columns: 1fr 1fr;
   column-gap: 3rem;
 
+} */
+
+/* 
+.testimonial-section{
+  height: 100vmin;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 8rem 5rem;
+  padding: 30px 0;
+}  */
+
+.test1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.test1 .testimonial{
+  flex: 1;
+  margin: 20px 20px;
 }
 
 .testimonial{
   background: #fff;
   text-align: center;
   padding: 30px 30px 50px;
-  margin: 0 20px 100px;
+  margin: 10px 20px 100px;
   position: relative;
-  /* margin: 100px; */
+  margin: 100px;
   padding-right: 30px;
 }
 
+.test1 .testimonial{
+  flex: 1;
+  margin: 25px 20px;
+}
+
+@media screen and (min-width: 1024px){
+  .testimonial-section{
+    height: 100vmin;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 8rem 5rem;
+    padding: 30px 0;
+}
+}
+
+@media screen and (max-width: 768px){
+  
+  .test1{
+    flex-direction: column;
+    padding-bottom: 3rem;
+  }
+
+  .test1 .testimonial{
+    flex: 1;
+    margin: 6rem 0;
+  }
+}
 
 .testimonial:before,
 .testimonial:after{
@@ -11677,12 +11741,14 @@ body {
     bottom: -40px;
     left: 0;
 }
+
 .testimonial:after{
     border-right: none;
     border-left: 125px solid transparent;
     left: auto;
     right: 0;
 }
+
 .testimonial .icon{
     display: inline-block;
     font-size: 80px;
@@ -11744,10 +11810,11 @@ body {
     background: #ffd9b8;
     border-color: #fff;
 }
-@media only screen and (max-width: 650px) and (min-width: 400px){
+
+/* @media only screen and (max-width: 650px) and (min-width: 400px){
     .testimonial:before{ border-right: 325px solid transparent; }
     .testimonial:after{ border-left: 325px solid transparent; }
-}
+} */
 
 
 .contact-section {
