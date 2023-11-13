@@ -11338,34 +11338,50 @@ body {
 }
 
  
+@media (max-width: 1024px) {
+  .exeboard-section {
+    margin: 2rem 1rem;
+    padding: 1rem;
+    height: 200vh;
+  }
+
+
+}
+
+ 
 @media (max-width: 768px) {
   .exeboard-section {
     margin: 2rem 1rem;
     padding: 1rem;
+    height: 250vh;
   }
+
+
 }
 
 
 @media (max-width: 540px) {
   .exeboard-section {
     margin: 3rem 0.5rem;
+    height: 150vh;
   }
 }
 
 @media (max-width: 380px) {
   .exeboard-section {
     margin: 0rem 0rem;
+    height: 150vh;
   }
 
 }
 
-.exeboard {
+/* .exeboard {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
   margin-bottom: 2.5rem;
-}
+} */
 
 
 .carousal-div {
@@ -11373,14 +11389,6 @@ body {
   height: 75vmin;
 }
 
-.carousal-div .carousal-item img {
-  width: 75vh;
-  aspect-ratio: 1 / 1;
-  overflow: hidden;
-  /* make it square */
-  object-fit:scale-down;
-  
-}
 
 .carousal-div .d-block {
   width: 75vh;
@@ -11400,19 +11408,19 @@ body {
 .outer-div,
 .inner-div {
   flex: 1;
-  width: 75vmin;
-  height: 75vmin;
+  width: 68vmin;
+  height: 68vmin;
   margin: 20px 20px;
   position: relative;
 }
 
+
+
 .exeboard-section .container{
-  width: 100%;
-  min-height: 100vh;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0px 90px;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px;
 }
 
 .content-section{
@@ -11420,6 +11428,15 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
+}
+
+
+.exeboard-section .container .content-section img {
+  width: 75vh;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  /* make it square */
+  object-fit:scale-down;
 }
 
 @media screen and (max-width: 768px){
@@ -11430,6 +11447,8 @@ body {
 
   .exeboard-section .content-section{
     position: relative;
+    width: 100%;
+    margin: 2rem 0;
   }
 }
 
@@ -11608,7 +11627,7 @@ body {
 
 @media screen and (max-width: 768px){
   .back p{
-    width: 90%;
+    width: 100%;
     white-space: wrap;
     overflow: hidden; 
     text-overflow: ellipsis;
