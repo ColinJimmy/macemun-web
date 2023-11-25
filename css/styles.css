@@ -11717,7 +11717,8 @@ body {
 }
 .sponsers-card-bg
 {
-  background: linear-gradient(127deg, #413E3E 18.64%, rgba(71, 69, 69, 0.42) 95.99%);
+  background: linear-gradient(127deg, #191818 50.88%, #363636 108.24%);
+
       position: absolute;
       bottom: 0;
       left: 0;
@@ -11757,6 +11758,7 @@ body {
 .sponsers-card:hover .sponsers-card-bg
 {
   top: 0;
+  filter: blur(1px);
 }
 
 .test1{
