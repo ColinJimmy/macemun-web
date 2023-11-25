@@ -11175,14 +11175,19 @@ body {
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   padding: 20px;
-  transition: transform 0.2s;
+  transition: .43s;
   border-bottom: 0.25rem solid #f1cf88;
-}
-  
-.committee-card:hover {
   transform: scale(1.05);
 }
   
+/* .committee-card:hover {
+  transform: scale(1.05);
+} */
+.committees:has(.committee-card:hover) >.committee-card:not(:hover)
+{
+  transform: scale(.97);
+  opacity: .7;
+}
 .committee-logo img {
   width: 200px;
   height: 200px;
@@ -11236,6 +11241,7 @@ body {
     padding-right: -2rem;
 
   }
+
 }
 
 .signup-section {
@@ -11698,6 +11704,60 @@ body {
   margin: 8rem 5rem;
   padding: 30px 0;
 }  */
+.sponsers-card
+{
+ 
+  width: 25rem;
+  height: 16rem;
+  background:white;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+  background:black;
+}
+.sponsers-card-bg
+{
+  background: linear-gradient(127deg, #413E3E 18.64%, rgba(71, 69, 69, 0.42) 95.99%);
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      top: 95%; /* Initially position the background below the card */
+      z-index: 0;
+      transition: top 0.5s ease; 
+}
+.sponsers-content
+{
+  padding: 20px;
+  box-sizing: border-box;
+  color: #fff;
+  position: relative;
+  z-index: 1; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sponsers-img
+{
+  filter: brightness(85%);
+}
+.sponsers-card:hover .sponsers-head
+{
+  color:#f1cf88 !important;
+}
+.sponsers-card:hover .sponsers-img
+{
+  filter: brightness(100%);
+}
+.sponsers-card:hover .sponsers-img-hm
+{
+  filter: brightness(140%);
+}
+
+.sponsers-card:hover .sponsers-card-bg
+{
+  top: 0;
+}
 
 .test1{
   display: flex;
