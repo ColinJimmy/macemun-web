@@ -11341,6 +11341,17 @@ body {
   }
 }
 
+.bg-committees{
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* margin: 3rem 5rem;
+  padding: 20px 0; */
+  padding-bottom: 4rem;
+}
+
 
 .exeboard-section {
   height: 100vh;
