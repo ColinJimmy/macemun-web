@@ -11156,6 +11156,51 @@ body {
   justify-content: center;
   margin: 5rem 5rem;
 }
+.online-committee-section {
+  margin: 4rem 0;
+  display: flex;
+  justify-content: center;
+}
+
+.online-committee-card {
+  background: #fff; 
+  color: #fff;
+  border-radius: 20px; 
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  max-width: 600px;
+  padding: 3rem;
+  text-align: center;
+  transform: translateY(0);
+  transition: all 0.3s ease-in-out;
+}
+
+
+
+.online-committee-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.3);
+}
+
+.online-card-logo img {
+  width: 75%;
+  height: auto;
+  margin-bottom: 1.5rem;
+}
+
+.online-card-content h2 {
+  font-size: 2.5rem;
+  color: #AE996E;
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .online-committee-card {
+    max-width: 350px;
+  }
+  .online-card-logo img {
+    width: 100%;
+  }
+}
 
 .committees-section {
   height: 100vh;
