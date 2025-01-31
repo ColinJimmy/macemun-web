@@ -52,3 +52,40 @@ window.addEventListener('DOMContentLoaded', event => {
     });
 
 });
+
+// Countdown Timer functionality
+function startCountdown(eventDate) {
+    const countdownElement = document.getElementById("countdown");
+
+    function updateCountdown() {
+        const now = new Date().getTime();
+        const distance = eventDate - now;
+
+        const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        countdownElement.innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
+        countdownElement.style.transform = "scale(1.1)";
+
+        setTimeout(() => {
+            countdownElement.style.transform = "scale(1)";
+        }, 200);
+
+        if (distance < 0) {
+            clearInterval(x);
+            countdownElement.innerHTML = "Event Started!";
+            countdownElement.style.backgroundColor = "#2ed573";
+        }
+    }
+
+    const x = setInterval(updateCountdown, 1000);
+}
+
+// Initialize countdown when DOM is fully loaded
+document.addEventListener('DOMContentLoaded', function() {
+    // Set the event date to March 14, 2025
+    const eventDate = new Date("March 14, 2025 00:00:00").getTime();
+    startCountdown(eventDate);
+});
