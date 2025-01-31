@@ -11937,7 +11937,7 @@ body {
 }
 .testimonial .pic img{
   height: 120px;
-  width: 120px;
+  width: 100%;
 }
 .testimonial .title{
     font-size: 15px;
