@@ -11837,19 +11837,26 @@ body {
   filter: blur(1px);
 }
 
-.test1{
+.test1 {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 200px;
+}
+
+.testimonial {
+  background: #fff;
   text-align: center;
+  padding: 30px;
+  margin: 20px;
+  position: relative;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  flex-basis: 60%;
+  min-width: 280px;
 }
 
-.test1 .testimonial{
-  flex: 1;
-  margin: 20px 20px;
-}
-
-.testimonial{
+/* .testimonial{
   background: #fff;
   text-align: center;
   padding: 30px 30px 50px;
@@ -11858,10 +11865,10 @@ body {
   margin: 100px;
   padding-right: 30px;
 }
-
+ */
 .test1 .testimonial{
   flex: 1;
-  margin: 25px 20px;
+  margin: 20px 20px;
 }
 
 @media screen and (min-width: 1024px){
@@ -11876,16 +11883,14 @@ body {
 }
 }
 
-@media screen and (max-width: 768px){
-  
-  .test1{
+@media screen and (max-width: 768px) {
+  .test1 {
     flex-direction: column;
-    padding-bottom: 3rem;
+    padding: 2rem;
   }
-
-  .test1 .testimonial{
-    flex: 1;
-    margin: 6rem 0;
+  
+  .test1 .testimonial {
+    margin: 2rem auto;
   }
 }
 
@@ -12128,11 +12133,13 @@ body {
   transition: 0.3s;
   margin: 8px;
   align-items: start;
+  height: 100%;
 }
 
 .team .member .member-img {
   position: relative;
   overflow: hidden;
+  height: 100%;
 }
 
 .team .member:hover {
@@ -12159,7 +12166,12 @@ body {
 }
 
 .contact-section {
-  padding-top: 5rem;
+  padding-top: 400px;
+}
+@media (max-width: 768px) {
+  .contact-section {
+    padding-top: 10rem;
+  }
 }
 .contact-section .card {
   border: 0;
