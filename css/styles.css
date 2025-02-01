@@ -11780,6 +11780,21 @@ body {
   margin: 8rem 5rem;
   padding: 30px 0;
 }  */
+
+.sponsors-sec{
+  margin-bottom: 600px;
+}
+@media(min-width:769px) and (max-width: 1200px){
+  .sponsors-sec{
+    margin-bottom: 1000px;
+  }
+}
+@media(max-width: 768px){
+  .sponsors-sec{
+    margin-bottom: 0px;
+  }
+}
+
 .sponsers-card
 {
  
@@ -12166,7 +12181,12 @@ body {
 }
 
 .contact-section {
-  padding-top: 400px;
+  padding-top: 600px;
+}
+@media (min-width: 769px) and (max-width: 1200px) {
+  .contact-section {
+    padding-top: 1000px;
+  }
 }
 @media (max-width: 768px) {
   .contact-section {
@@ -12210,8 +12230,4 @@ body {
 
 .footer {
   padding: 5rem 0;
-}
-
-.countdown-section .h2{
-  color: #f1cf88;
 }
