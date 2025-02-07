@@ -11782,11 +11782,11 @@ body {
 }  */
 
 .sponsors-sec{
-  margin-bottom: 600px;
+  margin-bottom: 1000px;
 }
 @media(min-width:769px) and (max-width: 1200px){
   .sponsors-sec{
-    margin-bottom: 1000px;
+    margin-bottom: 1400px;
   }
 }
 @media(max-width: 768px){
@@ -11884,6 +11884,10 @@ body {
 .test1 .testimonial{
   flex: 1;
   margin: 20px 20px;
+}
+
+#lasttest{
+  max-width: 500px;
 }
 
 @media screen and (min-width: 1024px){
@@ -12181,11 +12185,11 @@ body {
 }
 
 .contact-section {
-  padding-top: 600px;
+  padding-top: 1000px;
 }
 @media (min-width: 769px) and (max-width: 1200px) {
   .contact-section {
-    padding-top: 1000px;
+    padding-top: 1400px;
   }
 }
 @media (max-width: 768px) {
