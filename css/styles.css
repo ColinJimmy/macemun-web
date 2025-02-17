@@ -11892,7 +11892,7 @@ body {
 
 @media screen and (min-width: 1024px){
   .testimonial-section{
-    height: 100vmin;
+    height: 200vmin;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -11961,7 +11961,7 @@ body {
 }
 .testimonial .pic img{
   height: 120px;
-  width: 100%;
+  width: 120px;
 }
 .testimonial .title{
     font-size: 15px;
@@ -12234,4 +12234,110 @@ body {
 
 .footer {
   padding: 5rem 0;
+}
+
+
+.poster-image-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.poster-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Desktop screens (default) */
+@media screen and (min-width: 1200px) {
+  .poster-image {
+      width: 400px; /* Smaller width for large screens to avoid overwhelming size */
+  }
+}
+
+/* Large tablets and small desktop */
+@media screen and (max-width: 1199px) and (min-width: 992px) {
+  .poster-image {
+      width: 350px;
+  }
+}
+
+/* Medium tablets */
+@media screen and (max-width: 991px) and (min-width: 768px) {
+  .poster-image {
+      width: 300px;
+  }
+}
+
+/* Small tablets and large phones */
+@media screen and (max-width: 767px) and (min-width: 576px) {
+  .poster-image {
+      width: 250px;
+  }
+}
+
+/* Mobile phones */
+@media screen and (max-width: 575px) {
+  .poster-image {
+      width: 90%; /* Use percentage for smallest screens */
+      max-width: 300px; /* Prevent image from getting too large */
+  }
+}
+
+
+.video-testimonial-container {
+  margin-top: 4rem;
+  padding: 2rem 0;
+  width: 100%;
+}
+
+.video-testimonial-container h2 {
+  color: #fff;
+  margin-bottom: 2rem;
+}
+
+.video-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.testimonial-video {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Custom video controls styling */
+.testimonial-video::-webkit-media-controls {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 0 0 10px 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .video-wrapper {
+      max-width: 100%;
+  }
+  
+  .video-testimonial-container {
+      margin-top: 3rem;
+      padding: 1rem 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .video-testimonial-container {
+      margin-top: 2rem;
+  }
+  
+  .video-testimonial-container h2 {
+      font-size: 1.5rem;
+      margin-bottom: 1.5rem;
+  }
 }
