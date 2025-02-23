@@ -11309,6 +11309,66 @@ body {
 
 }
 
+/* Section Styling */
+.registration-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 4rem;
+}
+
+/* Card Styling */
+.registration-card {
+  margin-top: 20px;
+  background: linear-gradient(135deg, #AE996E, #d4c1a2);
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Price Item Styling */
+.price-item {
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.75rem 1rem;
+  margin: 0.5rem 0;
+  background: #fff;
+  border-radius: 8px;
+  font-weight: 600;
+  color: #444;
+}
+
+.price-item:hover{
+  font-weight: 700;
+}
+/* SOCHUM Fee Special Styling */
+.sochum-fee {
+  font-weight: 700;
+  background: #fff;
+}
+
+.sochum-fee:hover{
+  font-weight: 800;
+}
+
+@media (max-width: 768px) {
+  .registration-section {
+    padding-bottom: 2rem;
+  }
+  .registration-card {
+    max-width: 325px;
+  }
+  .section-heading{
+    text-align: center;
+    font-size: 2rem;
+  }
+}
+
 .signup-section {
   padding: 10rem 0;
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.5) 75%, #000 100%), url("../assets/img/bg-signup.jpg");
