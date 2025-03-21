@@ -11469,6 +11469,7 @@ body {
 }
 
 
+
 .exeboard-section {
   height: 100vh;
   display: flex;
@@ -11517,6 +11518,35 @@ body {
 
 }
 
+.eb-section {
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.guide-card {
+  margin: 2rem auto;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  background: #fff;
+}
+
+.guide-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  .guide-card {
+    margin: 1rem auto;
+  }
+  
+  .eb-section {
+    padding: 2rem 0;
+  }
+}
 /* .exeboard {
   display: flex;
   flex-wrap: wrap;
