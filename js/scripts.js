@@ -86,6 +86,6 @@ function startCountdown(eventDate) {
 // Initialize countdown when DOM is fully loaded
 document.addEventListener('DOMContentLoaded', function() {
     // Set the event date to March 14, 2025
-    const eventDate = new Date("March 28, 2025 00:00:00").getTime();
+    const eventDate = new Date("March 28, 2025 12:15:00").getTime();
     startCountdown(eventDate);
 });
